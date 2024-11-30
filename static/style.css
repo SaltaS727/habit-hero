@@ -1,0 +1,146 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #e6e6fa; /* Light lavender background */
+    color: #333; /* Neutral dark text color */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    color: #4b0082; /* Indigo color */
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#total-score {
+    font-size: 1.8em;
+    color: #ffcc00; /* Golden yellow for the score */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.golden-star {
+    color: #ffd700; /* Bright gold */
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+/* Categories Window */
+.categories-window {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 2px solid #4b0082; /* Indigo border */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Categories List */
+.categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the items horizontally */
+    gap: 15px; /* Add spacing between buttons */
+}
+
+/* Ensure Buttons are Uniform in Size */
+.categories a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #6a5acd; /* Slate blue */
+    padding: 15px 30px; /* Consistent padding */
+    border-radius: 10px;
+    transition: 0.3s ease;
+    font-size: 1.2em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+    display: inline-flex; /* Ensure content is centered */
+    justify-content: center; /* Horizontal center alignment */
+    align-items: center; /* Vertical center alignment */
+    min-width: 150px; /* Ensure consistent width */
+    text-align: center; /* Center text */
+}
+
+.categories a:hover {
+    background-color: #483d8b; /* Darker slate blue */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Reset Button */
+.reset-button {
+    background-color: #ff4500; /* Orange red */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.reset-button:hover {
+    background-color: #ff6347; /* Slightly lighter red */
+}
+
+/* Tasks Window */
+.tasks-window {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 2px solid #32cd32; /* Lime green border */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.tasks li {
+    margin: 15px 0;
+    font-size: 1.2em;
+    text-align: left; /* Align text for tasks */
+}
+
+.tasks input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.mark-done {
+    background-color: #32cd32; /* Lime green */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mark-done:hover {
+    background-color: #228b22; /* Darker green */
+}
+
+.superhero-hero {
+    margin-top: 20px;
+}
+
+.superhero-hero img {
+    width: 300px; /* Adjust size */
+    height: auto;
+    margin: 20px auto;
+    display: block; /* Center the image */
+    transition: transform 0.3s ease;
+}
+
+.superhero-hero img:hover {
+    transform: scale(1.1); /* Slight enlarge on hover */
+}
+.back-link {
+    font-size: 1.2em;;
+}

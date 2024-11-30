@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Hero</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Habit Hero</h1>
+    </header>
+    <h2>Big heroes come from tiny habits! Discover your task for today and let your hero shine!</h2>
+    <div id="total-score">
+        Your Total Score: {{ total_score }} <span class="golden-star">⭐</span>
+    </div>
+
+    <div class="categories-window">
+        <h2>Tasks to Do Today:</h2>
+        <ul class="categories">
+            {% for category in tasks_by_category.keys() %}
+            <li>
+                <a href="{{ url_for('tasks', category=category) }}">{{ category }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <a href="{{ url_for('reset_score') }}" class="reset-button">Reset Score</a>
+
+    <div class="superhero-hero">
+        <img src="{{ url_for('static', filename='superhero1.png') }}" alt="Superhero">
+    </div>
+</body>
+</html>
